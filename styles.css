@@ -1,0 +1,157 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card img {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #ff6f61;
+    letter-spacing: 2px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 60%;
+    height: 4px;
+    background-color: #ff6f61;
+    border-radius: 2px;
+    transform: translateX(-50%);
+}
+
+.section-description {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+    color: #666;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.contact-form .form-control {
+    border-radius: 5px;
+    border-color: #ff6f61;
+    padding: 15px;
+    box-shadow: none;
+    font-size: 1rem;
+}
+
+.contact-form .form-control:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 0 0.2rem rgba(255, 111, 97, 0.25);
+}
+
+.contact-form .btn-primary {
+    background-color: #ff6f61;
+    border-color: #ff6f61;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #e95747;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 767.98px) {
+    .card {
+        margin-bottom: 2rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+}
+/* Footer Navigation Styles */
+footer .navbar-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer .navbar-nav .nav-item {
+    margin: 0 10px; /* Space between nav items */
+}
+
+footer .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer .nav-link:hover {
+    color: #ff6f61;
+    text-decoration: underline;
+}
+
+/* Optional: Ensure the footer text is centered */
+footer .container {
+    text-align: center;
+}
+
+/* Adjust navbar container to center nav items */
+footer .navbar {
+    justify-content: center;
+}
